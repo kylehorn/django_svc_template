@@ -18,7 +18,6 @@ class Migration(migrations.Migration):
                 ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
                 ('created_at', models.DateTimeField(auto_now_add=True)),
                 ('updated_at', models.DateTimeField(auto_now=True)),
-                ('og_url', models.URLField(blank=True)),
                 ('is_active', models.BooleanField(default=True)),
                 ('profile_picture', models.URLField(max_length=500, null=True, blank=True)),
                 ('user', models.OneToOneField(related_name='profile', to=settings.AUTH_USER_MODEL)),

@@ -1,5 +1,25 @@
 {{cookiecutter.repo_name}}
-=====
+^^^^^
+
+Local
+^^^^^
+
+Run this app locally inside a virtualenv. To install virtualenvwrapper run:
+
+.. code-block:: bash
+
+    pip install virtualenvwrapper
+
+Rename the local_settings_template.py file to local_settings.py
+
+The to get your application up and running, run:
+
+.. code-block:: bash
+
+    pip install -r requirements.txt
+    python manage.py collectstatic --noinput
+    python manage.py syncdb
+    python manage.py runserver_plus
 
 
 Dokku
