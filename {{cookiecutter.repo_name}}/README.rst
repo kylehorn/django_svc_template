@@ -16,6 +16,7 @@ The to get your application up and running, run:
 
 .. code-block:: bash
 
+    mv {{cookiecutter.repo_name}}/local_settings_template.py {{cookiecutter.repo_name}}/local_settings.py
     pip install -r requirements.txt
     python manage.py collectstatic --noinput
     python manage.py syncdb
