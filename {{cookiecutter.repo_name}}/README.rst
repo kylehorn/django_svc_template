@@ -10,9 +10,7 @@ Run this app locally inside a virtualenv. To install virtualenvwrapper run:
 
     pip install virtualenvwrapper
 
-Rename the local_settings_template.py file to local_settings.py
-
-The to get your application up and running, run:
+The to get your application up and running, inside your new directory, run:
 
 .. code-block:: bash
 
