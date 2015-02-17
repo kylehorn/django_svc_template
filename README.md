@@ -14,6 +14,6 @@ Create svc from template:
 
 `cookiecutter https://github.com/kylehorn/django_svc_template`
 
-Bootstrp svc:
+Bootstrp svc in new directory:
 
 `./setup.sh`
