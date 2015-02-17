@@ -6,7 +6,7 @@
 
 Install cookiecutter:
 
-`pip install cookiecutter`
+`sudo pip install cookiecutter`
 
 Create svc from template:
 
