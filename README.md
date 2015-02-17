@@ -4,11 +4,14 @@
 [![Circle CI](https://circleci.com/gh/kylehorn/django_svc_template/tree/master.svg?style=svg)](https://circleci.com/gh/kylehorn/django_svc_template/tree/master)
 
 
-First install cookiecutter
+Install cookiecutter:
+
 `pip install cookiecutter`
 
-Then run
+Create svc from template:
+
 `cookiecutter https://github.com/kylehorn/django_svc_template`
 
-Run the setup script in the new directory
+Bootstrp svc:
+
 `./setup.sh`
