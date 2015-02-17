@@ -9,3 +9,6 @@ First install cookiecutter
 
 Then run
 `cookiecutter https://github.com/kylehorn/django_svc_template`
+
+Run the setup script in the new directory
+`./setup.sh`
