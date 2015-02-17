@@ -14,10 +14,10 @@ echo 'pip installed'
 # virtualenvwrapper is used to keep enviroments standard
 echo 'Installing virtualenvwrapper'
 
-if [[ ! -s "$HOME/.bash_profile" && -s "$HOME/.profile" ]] ; then
-  profile_file="$HOME/.profile"
+if [[ ! -s "$HOME/.zprofile" && -s "$HOME/.zshrc" ]] ; then
+  profile_file="$HOME/.zprofile"
 else
-  profile_file="$HOME/.bash_profile"
+  profile_file="$HOME/.zshrc"
 fi
 
 if [[ -x `which pip` && ! -x `which mkvirtualenv` ]]; then
@@ -37,8 +37,7 @@ if [[ -x `which pip` && ! -x `which mkvirtualenv` ]]; then
       echo "source /usr/local/bin/virtualenvwrapper.sh" >> "${profile_file}"
     fi
 
-    source ~/.bashrc
-
+    source ${profile_file}
 fi
 
 echo 'virtualenvwrapper installed'
@@ -49,4 +48,8 @@ echo '**************************'
 
 
 echo '** run the following command **'
+echo ' '
+echo ' '
 echo 'mkvirtualenv {{ cookiecutter.repo_name }} -r requirements.txt'
+echo ' '
+echo ' '
