@@ -15,15 +15,14 @@ echo 'pip installed'
 echo 'Installing virtualenvwrapper'
 
 if [[ ! -s "$HOME/.zprofile" && -s "$HOME/.zshrc" ]] ; then
-  profile_file="$HOME/.zshrc"
-else
   profile_file="$HOME/.zprofile"
+else
+  profile_file="$HOME/.zshrc"
 fi
 
 if [[ -x `which pip` && ! -x `which mkvirtualenv` ]]; then
     pip install virtualenvwrapper
 
-    { > ${profile_file} ; }
     if ! grep -q 'export WORKON_HOME=~/.envs' "${profile_file}" ; then
       echo "export WORKON_HOME=~/.envs" >> "${profile_file}"
     fi
@@ -36,8 +35,6 @@ if [[ -x `which pip` && ! -x `which mkvirtualenv` ]]; then
       echo "Editing ${profile_file} to load ~/.git-completioin.bash on Terminal launch"
       echo "source /usr/local/bin/virtualenvwrapper.sh" >> "${profile_file}"
     fi
-
-    source ${profile_file}
 fi
 
 echo 'virtualenvwrapper installed'
@@ -49,7 +46,5 @@ echo '**************************'
 
 echo '** run the following command **'
 echo ' '
-echo ' '
 echo 'mkvirtualenv {{ cookiecutter.repo_name }} -r requirements.txt'
-echo ' '
 echo ' '
