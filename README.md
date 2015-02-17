@@ -15,3 +15,8 @@ Create svc from template:
 Bootstrp svc:
 
 `./setup.sh`
+
+
+If you don't have pip installed you can install it by running:
+
+`sudo easy_install pip`
