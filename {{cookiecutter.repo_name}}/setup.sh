@@ -47,4 +47,6 @@ echo '**************************'
 echo '** VIRTUALENV INSTALLED **'
 echo '**************************'
 
+
+echo '** run the following command **'
 echo 'mkvirtualenv {{ cookiecutter.repo_name }} -r requirements.txt'
