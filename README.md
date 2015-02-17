@@ -1,5 +1,6 @@
-# django_svc_template
+# Django Service Template
 
+## Installation
 
 If you don't have pip installed you can install it by running:
 
