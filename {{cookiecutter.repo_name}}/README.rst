@@ -8,17 +8,20 @@ Run this app locally inside a virtualenv. To install virtualenvwrapper run:
 
 .. code-block:: bash
 
-    pip install virtualenvwrapper
+    ./setup.sh
+
+Setup Virtualenv by running
+
+.. code-block:: bash
+
+    mkvirtualenv {{ cookiecutter.repo_name }} -r requirements.txt
+
 
 The to get your application up and running, inside your new directory, run:
 
 .. code-block:: bash
 
-    mv {{cookiecutter.repo_name}}/local_settings_template.py {{cookiecutter.repo_name}}/local_settings.py
-    pip install -r requirements.txt
-    python manage.py collectstatic --noinput
-    python manage.py syncdb
-    python manage.py runserver_plus
+    ./django_setup.sh
 
 
 Dokku
